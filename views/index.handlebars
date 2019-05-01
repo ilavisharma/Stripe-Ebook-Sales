@@ -12,7 +12,7 @@
             </p>
             <form action="/charge" method="POST">
                 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_test_SjfIpckGQ0bbyFfASBqvss5l005fwSvrqs" data-amount="2500" data-name="Crush It Ebook"
+                    data-key="{{stripePublishableKey}}" data-amount="2500" data-name="Crush It Ebook"
                     data-description="A book written by Gary Vaynerchuk" data-image="/img/marketplace.jpg"
                     data-locale="auto">
                     </script>

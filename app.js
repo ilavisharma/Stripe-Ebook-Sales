@@ -18,7 +18,9 @@ app.use(express.static(`${__dirname}/public`));
 
 // Index Route
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    stripePublishableKey: process.env.PUBLISHABLE_KEY
+  });
 });
 
 // Charge Route

@@ -1,1 +1,31 @@
-hello index
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Crush It Ebook
+            </h1>
+            <p class="lead">
+                Learn from Gary Vaynerchuk <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum in nemo, qui ratione ad, incidunt
+                corporis itaque ipsam eius deleniti laudantium vero necessitatibus expedita. Facere assumenda modi
+                labore doloribus officiis?
+            </p>
+            <form action="/charge" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_SjfIpckGQ0bbyFfASBqvss5l005fwSvrqs" data-amount="2500" data-name="Crush It Ebook"
+                    data-description="A book written by Gary Vaynerchuk" data-image="/img/marketplace.jpg"
+                    data-locale="auto">
+                    </script>
+                <script>
+                    // Hide default stripe Button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase for $25</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/crushIt.jpg" alt="crush it" class="img-fluid">
+        </div>
+    </div>
+</section>
